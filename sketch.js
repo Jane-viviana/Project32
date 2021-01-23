@@ -13,11 +13,13 @@ var sling;
 var score = 0;
 var bkg;
 var bg;
+var backgroundImg;
 
 function preload(){
     getBackGroundImg()
     bkg = loadImage("Night sky.jpg");
     bg = loadImage("sky day.jpg");
+    backgroundImg = loadImage("day sky 2.jpg");
 }
 
 
@@ -45,16 +47,16 @@ function setup(){
      sling = new SlingShot(polygon.body,{x:175,y:250});
 }
 function draw(){
-    if(bkg){
-        background(bg);
+    if(backgroundImg){
+        background(backgroundImg);
    }
    else{
-       background(0);
+       background(bkg);
    }
     noStroke();
     textSize(25)
     fill("white")
-    text("Score  " + score, width-700, 50)
+    text("Score  "+ score, width-700, 50)
 
     Engine.update(engine);
 
@@ -70,7 +72,20 @@ function draw(){
     block8.display();
     block9.display();
     block10.display();
-   block11.display();
+    block11.display();
+
+   block1.score();
+   block2.score();
+   block3.score();
+   block4.score();
+   block5.score();
+   block6.score();
+   block7.score();
+   block8.score();
+   block9.score();
+   block9.score();
+   block10.score();
+   block11.score();
 
     polygon.display();
     sling.display();
@@ -102,6 +117,9 @@ async function getBackGroundImg(){
     if(hour>0600 && hour<1600){
       bkg 
     }
-    backgroundImg = loadImage(bg);
+    else{
+        bg 
+    }
+    backgroundImg = (bg);
     console.log(backgroundImg);
 }
