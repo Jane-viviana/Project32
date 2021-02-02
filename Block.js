@@ -4,7 +4,7 @@ class Block{
             //isStatic:true,
             'restitution':0.8,
             'friction':2.0,
-            'density':2.0
+            'density':0.05
         }
         this.visiblity = 225;
         this.body = Bodies.rectangle(x, y, width, height, options);

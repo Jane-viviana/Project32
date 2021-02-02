@@ -40,8 +40,8 @@ function setup(){
      block7 = new Block(600,100,50,50);
      block8 = new Block(650,20,50,50);
      block9 = new Block(650,20,50,50);
-     block10 = new Block(550,20,50,50);
-     block11 = new Block(550,20,50,50);
+     block10 = new Block(550,30,50,50);
+     block11 = new Block(550,30,50,50);
 
      polygon = new Polygon(175,250,15,15);
      sling = new SlingShot(polygon.body,{x:175,y:250});
