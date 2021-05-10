@@ -114,12 +114,13 @@ async function getBackGroundImg(){
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
 
-    if(hour>0600 && hour<1600){
-      bkg 
+    if(hour >= 06 && hour <= 16){
+        bkg = "day path";
     }
     else{
-        bg 
+        bg = "night path";
     }
-    backgroundImg = (bg);
+    backgroundImg = loadImg(bg)
     console.log(backgroundImg);
+    if (hour >= 06 && hour <= 16) { bg = "day path"; } 
 }
