@@ -33,7 +33,8 @@ function setup(){
      block2 = new Block(450,300,50,50)
      block3 = new Block(450,300,50,50);
      block4 = new Block(475,300,50,50);
-     
+     block12 = new Block(450,300,50,50);
+
      ground2 = new Ground(600,200,300,15);
      block5 = new Block(600,100,50,50);
      block6 = new Block(600,100,50,50);
@@ -55,24 +56,36 @@ function draw(){
    }
     noStroke();
     textSize(25)
-    fill("white")
+    
     text("Score  "+ score, width-700, 50)
 
     Engine.update(engine);
 
     ground.display();
     block1.display();
+    fill("white")
     block2.display();
+    fill("white")
     block3.display();
+    fill("white")
     block4.display();
+    fill("white")
+
     ground2.display();
     block5.display();
+    fill("white")
     block6.display();
+    fill("white")
     block7.display();
+    fill("white")
     block8.display();
+    fill("white")
     block9.display();
+    fill("white")
     block10.display();
+    fill("white")
     block11.display();
+    fill("white")
 
    block1.score();
    block2.score();

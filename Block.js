@@ -34,6 +34,7 @@ class Block{
             tint(255,this.visiblity);
             pop();
         }
+        tint(255,this.visibility);
     }
         score(){
             if(this.visiblity < 0 && this.visiblity >- 1005){
